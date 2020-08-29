@@ -31,9 +31,11 @@ def upload_to_bucket(file_name, object_name:str):
     from google.oauth2 import service_account
     from pathlib import Path
     from os.path import basename
+    import os
 
     # Reading credentials
     credentials_path = Path('') # Add the creds here: # C:\\Users\\lf188653\\GCPKey\\microstrategyit-749574041a8c.json
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = str(credentials_path)
     credentials = service_account.Credentials.from_service_account_file(credentials_path)
     
     dictionary = {'bucketName': 'appusma206_apps_output',
