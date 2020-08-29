@@ -12,4 +12,4 @@
 #################################################
 
 cd /ishome/ssg/lf188653/projects/DataEngineering-HeadCount/
-/ishome/ssg/lf188653/.conda/envs/testenv/bin/python main.py /ishome/ssg/lf188653/projects/Data/HEADCOUNT/
+/ishome/ssg/lf188653/.conda/envs/testenv/bin/python main.py
